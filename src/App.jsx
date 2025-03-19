@@ -1,4 +1,4 @@
-import DefaultLayout from './layouts/DefaultLayout';
+import DefaultLayout from './layouts/DefaultLayout.jsx';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import HomePage from './components/pages/HomePage';
 import MoviePage from './components/pages/MoviePage';
