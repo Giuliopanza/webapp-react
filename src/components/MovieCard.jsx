@@ -8,7 +8,7 @@ export default function MovieCard({ movie }) {
         <img src={image} alt={title} />
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
-          <span>{author}</span>
+          <span>{director}</span>
           <p>{abstract}</p>
           <Link to={`movies/${id}`}>Read More</Link>
         </div>

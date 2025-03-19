@@ -2,9 +2,9 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import ReviewCard from '../ReviewCard';
+import ReviewCard from '../components/ReviewCard.jsx';
 
-//import ReviewForm from '../components/ReviewForm';
+import ReviewForm from '../components/ReviewForm.jsx';
 
 export default function MoviePage() {
   const { id } = useParams();
@@ -29,7 +29,7 @@ export default function MoviePage() {
   return (
     <>
       <h1>{movie?.title}</h1>
-      <img src={movie?.image} alt={book?.title} />
+      <img src={movie?.image} alt={movie?.title} />
       {/* qui andrà la pagina di dettaglio del prodotto */}
 
       <section>
